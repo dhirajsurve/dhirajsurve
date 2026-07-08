@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Surve Technologies Inc. | Enterprise AI Automation</title>
+    <title>Surve Technologies Inc. | Enterprise AI Solutions</title>
     <style>
+        /* Modern SaaS Styling */
         :root {
             --bg: #0a0a0a;
             --card-bg: #161616;
@@ -15,32 +16,32 @@
         }
 
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Inter', -apple-system, sans-serif; background-color: var(--bg); color: var(--text-primary); line-height: 1.6; }
+        body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background-color: var(--bg); color: var(--text-primary); line-height: 1.6; }
 
-        /* Layout */
         .container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
 
-        /* Nav */
+        /* Navigation */
         nav { padding: 1.5rem 0; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; background: rgba(10,10,10,0.95); z-index: 100; border-bottom: 1px solid #222; }
         .logo { font-weight: 800; font-size: 1.5rem; letter-spacing: -0.05em; }
-        .nav-links { display: flex; list-style: none; gap: 2rem; }
+        .nav-links { display: flex; list-style: none; gap: 2rem; align-items: center; }
         .dropdown { position: relative; }
         .dropdown-menu { display: none; position: absolute; top: 100%; left: 0; background: var(--card-bg); padding: 1rem; border-radius: 0.5rem; min-width: 200px; border: 1px solid #333; }
         .dropdown:hover .dropdown-menu { display: block; }
         nav a { color: var(--text-secondary); text-decoration: none; font-size: 0.9rem; transition: 0.3s; cursor: pointer; }
         nav a:hover { color: var(--accent); }
 
-        /* Hero */
+        /* Hero Section */
         .hero { text-align: center; padding: 8rem 0; }
         .hero h1 { font-size: 4rem; margin-bottom: 1.5rem; line-height: 1.1; }
         .hero p { font-size: 1.25rem; color: var(--text-secondary); max-width: 600px; margin: 0 auto 2rem; }
         .btn { background: var(--accent); color: white; padding: 0.8rem 2rem; border-radius: 50px; text-decoration: none; font-weight: 600; display: inline-block; transition: 0.3s; }
         .btn:hover { background: #2563eb; box-shadow: 0 0 20px var(--accent-glow); }
 
-        /* Sections */
+        /* Content Sections */
         .section { padding: 5rem 0; }
         .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
-        .card { background: var(--card-bg); padding: 2rem; border-radius: 1rem; border: 1px solid #333; }
+        .card { background: var(--card-bg); padding: 2rem; border-radius: 1rem; border: 1px solid #333; transition: 0.3s; }
+        .card:hover { border-color: var(--accent); }
 
         footer { border-top: 1px solid #333; padding: 3rem 0; text-align: center; color: var(--text-secondary); font-size: 0.8rem; }
     </style>
@@ -66,8 +67,19 @@
             </div>
         </li>
         <li><a href="#resources">Resources</a></li>
-        <li><a href="mailto:contact@survetech.ca">Contact</a></li>
+        <li>
+            <a href="#" onclick="copyEmail(event)" style="cursor: pointer;">Contact Us</a>
+        </li>
     </ul>
+    <script>
+        function copyEmail(event) {
+            event.preventDefault();
+            const email = "survetechnologies@gmail.com";
+            navigator.clipboard.writeText(email).then(() => {
+                alert("Email address copied to clipboard: " + email);
+            });
+        }
+    </script>
     <a href="https://www.rentaiagent.ai" class="btn">Get a Demo</a>
 </nav>
 
@@ -78,7 +90,7 @@
 </header>
 
 <section id="products" class="container section">
-    <h2 style="margin-bottom: 3rem;">Core Product Ecosystem</h2>
+    <h2 style="margin-bottom: 3rem; text-align: center;">Core Product Ecosystem</h2>
     <div class="grid">
         <article class="card">
             <h3>RentAIAgent.ai</h3>
@@ -95,24 +107,8 @@
     </div>
 </section>
 
-<section id="resources" class="container section" style="background: #111;">
-    <div class="container">
-        <h2 style="margin-bottom: 2rem;">Insights & Resources</h2>
-        <div class="grid">
-            <div>
-                <h4>Enterprise AI Architecture</h4>
-                <p style="color: var(--text-secondary);">Learn how we utilize LangChain and Langfuse for production-grade agent tracing.</p>
-            </div>
-            <div>
-                <h4>The Canadian AI Advantage</h4>
-                <p style="color: var(--text-secondary);">Why data sovereignty and local infrastructure matter for your Canadian business.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
 <footer class="container">
-    &copy; 2026 Surve Technologies Inc. | Brampton, Ontario | Enterprise AI Solutions
+    &copy; 2026 Surve Technologies Inc. | Brampton, Ontario
 </footer>
 
 </body>

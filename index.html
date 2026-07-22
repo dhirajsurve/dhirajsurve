@@ -1,115 +1,413 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth bg-black">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Surve Technologies Inc. | Enterprise AI Solutions</title>
-    <style>
-        /* Modern SaaS Styling */
-        :root {
-            --bg: #0a0a0a;
-            --card-bg: #161616;
-            --text-primary: #ffffff;
-            --text-secondary: #a3a3a3;
-            --accent: #3b82f6;
-            --accent-glow: rgba(59, 130, 246, 0.2);
-        }
-
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background-color: var(--bg); color: var(--text-primary); line-height: 1.6; }
-
-        .container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
-
-        /* Navigation */
-        nav { padding: 1.5rem 0; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; background: rgba(10,10,10,0.95); z-index: 100; border-bottom: 1px solid #222; }
-        .logo { font-weight: 800; font-size: 1.5rem; letter-spacing: -0.05em; }
-        .nav-links { display: flex; list-style: none; gap: 2rem; align-items: center; }
-        .dropdown { position: relative; }
-        .dropdown-menu { display: none; position: absolute; top: 100%; left: 0; background: var(--card-bg); padding: 1rem; border-radius: 0.5rem; min-width: 200px; border: 1px solid #333; }
-        .dropdown:hover .dropdown-menu { display: block; }
-        nav a { color: var(--text-secondary); text-decoration: none; font-size: 0.9rem; transition: 0.3s; cursor: pointer; }
-        nav a:hover { color: var(--accent); }
-
-        /* Hero Section */
-        .hero { text-align: center; padding: 8rem 0; }
-        .hero h1 { font-size: 4rem; margin-bottom: 1.5rem; line-height: 1.1; }
-        .hero p { font-size: 1.25rem; color: var(--text-secondary); max-width: 600px; margin: 0 auto 2rem; }
-        .btn { background: var(--accent); color: white; padding: 0.8rem 2rem; border-radius: 50px; text-decoration: none; font-weight: 600; display: inline-block; transition: 0.3s; }
-        .btn:hover { background: #2563eb; box-shadow: 0 0 20px var(--accent-glow); }
-
-        /* Content Sections */
-        .section { padding: 5rem 0; }
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
-        .card { background: var(--card-bg); padding: 2rem; border-radius: 1rem; border: 1px solid #333; transition: 0.3s; }
-        .card:hover { border-color: var(--accent); }
-
-        footer { border-top: 1px solid #333; padding: 3rem 0; text-align: center; color: var(--text-secondary); font-size: 0.8rem; }
-    </style>
-</head>
-<body>
-
-<nav class="container">
-    <div class="logo">Surve Technologies</div>
-    <ul class="nav-links">
-        <li class="dropdown">
-            <a>Products &nabla;</a>
-            <div class="dropdown-menu">
-                <a href="https://www.rentaiagent.ai" style="display: block; margin-bottom: 0.5rem;">RentAIAgent.ai</a>
-                <a href="#" style="display: block;">Enterprise Email Harmonizer</a>
-            </div>
-        </li>
-        <li class="dropdown">
-            <a>Solutions &nabla;</a>
-            <div class="dropdown-menu">
-                <a href="#" style="display: block; margin-bottom: 0.5rem;">Customer Service AI</a>
-                <a href="#" style="display: block; margin-bottom: 0.5rem;">Architecture Consulting</a>
-                <a href="#" style="display: block;">Workflow Automation</a>
-            </div>
-        </li>
-        <li><a href="#resources">Resources</a></li>
-        <li>
-            <a href="#" onclick="copyEmail(event)" style="cursor: pointer;">Contact Us</a>
-        </li>
-    </ul>
+    <title>Surve Technologies Inc. | Cognitive Agent Ecosystems</title>
+    <meta name="description" content="Surve Technologies designs, builds, and deploys enterprise-grade AI agent ecosystems. Engineered with absolute sovereignty in Brampton, Ontario.">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
     <script>
-        function copyEmail(event) {
-            event.preventDefault();
-            const email = "survetechnologies@gmail.com";
-            navigator.clipboard.writeText(email).then(() => {
-                alert("Email address copied to clipboard: " + email);
-            });
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        apple: {
+                            black: '#000000',
+                            darkGray: '#1d1d1f',
+                            lightGray: '#f5f5f7',
+                            blue: '#0066cc',
+                            muted: '#86868b'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['SF Pro Display', '-apple-system', 'BlinkMacSystemFont', 'Inter', 'sans-serif'],
+                    }
+                }
+            }
         }
     </script>
-    <a href="https://www.rentaiagent.ai" class="btn">Get a Demo</a>
-</nav>
 
-<header class="hero container">
-    <h1>Building the Future of <span style="color: var(--accent);">AI Automation.</span></h1>
-    <p>A Canadian SaaS leader. We architect, deploy, and scale intelligent agent ecosystems that transform your business operations.</p>
-    <a href="https://www.rentaiagent.ai" class="btn">Explore Flagship Product</a>
-</header>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-<section id="products" class="container section">
-    <h2 style="margin-bottom: 3rem; text-align: center;">Core Product Ecosystem</h2>
-    <div class="grid">
-        <article class="card">
-            <h3>RentAIAgent.ai</h3>
-            <p>Deploy 500+ specialized AI agents on-demand. Designed for property management and scalable customer interaction without the need for custom code.</p>
-        </article>
-        <article class="card">
-            <h3>Email Harmonization Engine</h3>
-            <p>Enterprise-grade AI to manage and synchronize high-volume business communications. Built with LangGraph for state-managed efficiency.</p>
-        </article>
-        <article class="card">
-            <h3>Custom Agent Orchestration</h3>
-            <p>Bespoke architecture design using AWS/GCP infrastructures, tailored for high-security, traceable, and compliant AI deployment.</p>
-        </article>
-    </div>
-</section>
+    <style>
+        /* Apple transition easing curve */
+        .apple-fade {
+            opacity: 0;
+            transform: scale(0.98) translateY(20px);
+            transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+            will-change: opacity, transform;
+        }
+        .apple-fade.is-visible {
+            opacity: 1;
+            transform: scale(1) translateY(0);
+        }
+        *:focus-visible {
+            outline: 2px solid #0066cc;
+            outline-offset: 4px;
+        }
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #000000; }
+        ::-webkit-scrollbar-thumb { background: #2d2d2f; border-radius: 4px; }
+    </style>
+</head>
+<body class="bg-black text-[#f5f5f7] font-sans antialiased selection:bg-apple-blue selection:text-white">
 
-<footer class="container">
-    &copy; 2026 Surve Technologies Inc. | Brampton, Ontario
-</footer>
+    <header class="sticky top-0 z-50 w-full bg-black/85 backdrop-blur-md border-b border-neutral-900/80">
+        <div class="mx-auto flex max-w-6xl items-center justify-between p-4 px-6">
+            <a href="#home" class="flex items-center space-x-2.5 opacity-90 hover:opacity-100 transition-opacity" aria-label="Surve Home">
+                <svg class="h-5 w-5 text-white" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <polygon points="50,5 95,30 95,70 50,95 5,70 5,30" stroke="currentColor" stroke-width="10" stroke-linejoin="round"/>
+                    <circle cx="50" cy="50" r="15" fill="currentColor"/>
+                </svg>
+                <span class="text-sm font-semibold tracking-tight text-white">Surve</span>
+            </a>
 
+            <nav class="hidden md:flex items-center space-x-10 text-xs font-normal text-apple-muted" aria-label="Main Navigation">
+                <a href="#home" class="hover:text-white transition-colors">Home</a>
+                <a href="#services" class="hover:text-white transition-colors">Services</a>
+                <a href="#reviews" class="hover:text-white transition-colors">Reviews</a>
+                <a href="#contact" class="hover:text-white transition-colors">Contact</a>
+            </nav>
+
+            <div class="flex items-center">
+                <a href="#contact" class="inline-flex items-center justify-center rounded-full bg-white px-4 py-1.5 text-xs font-medium text-black hover:bg-neutral-200 transition-all">
+                    Get a Demo
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main id="main-content">
+        
+        <section id="home" class="relative overflow-hidden pt-32 pb-24 sm:pt-40 sm:pb-36 lg:pb-48">
+            <div class="mx-auto max-w-5xl px-6 text-center">
+                <div class="apple-fade">
+                    <span class="inline-flex items-center rounded-full bg-neutral-900 px-3 py-1 text-xs font-medium text-apple-muted border border-neutral-800/60 mb-8">
+                        Surve OS 1.0 Ecosystems
+                    </span>
+                    <h1 id="hero-headline" class="text-5xl font-bold tracking-tighter text-white sm:text-7xl lg:text-8xl leading-[1.05]">
+                        </h1>
+                    <p id="hero-subheadline" class="mt-8 text-xl sm:text-2xl font-normal leading-relaxed text-apple-muted max-w-3xl mx-auto tracking-tight">
+                        </p>
+                    <div class="mt-12 flex items-center justify-center gap-x-8 text-sm">
+                        <a href="#contact" id="hero-cta-primary" class="rounded-full bg-apple-blue px-6 py-3 font-medium text-white hover:bg-[#0077dd] transition-all">
+                            </a>
+                        <a href="#services" id="hero-cta-secondary" class="font-medium text-apple-blue hover:underline inline-flex items-center group">
+                            <svg class="w-4 h-4 ml-1 transform group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="mx-auto mt-32 max-w-5xl lg:mt-40">
+                    <div id="products-grid" class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                        <div class="col-span-full text-apple-muted text-xs tracking-widest uppercase py-8">Synchronizing Dynamic Core Modules...</div>
+                    </div>
+                </div>
+
+                <div class="mx-auto mt-32 max-w-4xl border-t border-neutral-900 pt-16 apple-fade">
+                    <dl id="stats-grid" class="grid grid-cols-2 gap-y-12 text-center sm:grid-cols-4">
+                        </dl>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="py-32 bg-[#09090b] border-y border-neutral-900/60">
+            <div class="mx-auto max-w-5xl px-6">
+                <div class="max-w-3xl apple-fade">
+                    <h2 class="text-xs font-semibold uppercase tracking-widest text-apple-muted">Capabilities</h2>
+                    <p class="mt-4 text-4xl font-bold tracking-tighter text-white sm:text-5xl">Engineered for absolute scale.</p>
+                </div>
+
+                <div id="services-grid" class="mx-auto mt-20 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+                    </div>
+            </div>
+        </section>
+
+        <section id="reviews" class="py-32 bg-black">
+            <div class="mx-auto max-w-5xl px-6">
+                <div class="text-center apple-fade mb-20">
+                    <h2 class="text-xs font-semibold uppercase tracking-widest text-apple-muted">Validation</h2>
+                    <p class="mt-4 text-4xl font-bold tracking-tighter text-white sm:text-5xl">Proven on enterprise infrastructure.</p>
+                </div>
+
+                <div id="reviews-grid" class="grid grid-cols-1 gap-6 sm:grid-cols-2">
+                    </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-32 bg-[#09090b] border-t border-neutral-900">
+            <div class="mx-auto max-w-5xl px-6">
+                <div class="grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:gap-x-24">
+                    
+                    <div class="apple-fade flex flex-col justify-between">
+                        <div>
+                            <h2 class="text-4xl font-bold tracking-tighter text-white sm:text-5xl">Initiate Architectural Discovery.</h2>
+                            <p class="mt-6 text-base leading-relaxed text-apple-muted">
+                                Consult directly with our technical deployment leads in Brampton, Ontario to construct a sovereign, custom computational blueprint for your enterprise operations.
+                            </p>
+                        </div>
+
+                        <div class="mt-12 space-y-6 text-xs text-apple-muted border-t border-neutral-900 pt-8">
+                            <p><span class="text-white font-medium block mb-1">Corporate Presence</span> Brampton, Ontario, Canada</p>
+                            <p><span class="text-white font-medium block mb-1">Secure Channel</span> <a href="mailto:solutions@survetechnologies.com" class="text-apple-blue hover:underline">solutions@survetechnologies.com</a></p>
+                        </div>
+                    </div>
+
+                    <div class="apple-fade bg-[#141416] p-8 rounded-2xl border border-neutral-850" id="contact-form-container">
+                        <form id="discovery-form" novalidate class="space-y-6">
+                            <div id="form-alert" class="sr-only" aria-live="assertive"></div>
+                            
+                            <div>
+                                <label for="form-name" class="block text-[10px] font-semibold text-apple-muted uppercase tracking-wider">Full Name</label>
+                                <input type="text" id="form-name" required class="mt-2 block w-full rounded-lg bg-black border border-neutral-800 px-4 py-3 text-white text-sm focus:border-apple-blue focus:ring-1 focus:ring-apple-blue transition-all">
+                                <p class="mt-1 text-xs text-rose-500 hidden" id="error-name"></p>
+                            </div>
+
+                            <div>
+                                <label for="form-email" class="block text-[10px] font-semibold text-apple-muted uppercase tracking-wider">Corporate Email</label>
+                                <input type="email" id="form-email" required class="mt-2 block w-full rounded-lg bg-black border border-neutral-800 px-4 py-3 text-white text-sm focus:border-apple-blue focus:ring-1 focus:ring-apple-blue transition-all">
+                                <p class="mt-1 text-xs text-rose-500 hidden" id="error-email"></p>
+                            </div>
+
+                            <div>
+                                <label for="form-message" class="block text-[10px] font-semibold text-apple-muted uppercase tracking-wider">Ecosystem Framework Goals</label>
+                                <textarea id="form-message" rows="4" required class="mt-2 block w-full rounded-lg bg-black border border-neutral-800 px-4 py-3 text-white text-sm focus:border-apple-blue focus:ring-1 focus:ring-apple-blue transition-all"></textarea>
+                                <p class="mt-1 text-xs text-rose-500 hidden" id="error-message"></p>
+                            </div>
+
+                            <button type="submit" class="block w-full rounded-full bg-white px-4 py-3.5 text-center text-sm font-semibold text-black hover:bg-neutral-200 transition-all shadow-lg">
+                                Submit Request
+                            </button>
+
+                            <p class="text-[10px] leading-normal text-neutral-600 mt-4">
+                                <strong>PIPEDA Compliance Mandate:</strong> Surve Technologies Inc. processes operational data within compliant sovereign environments inside Canada. Access is strictly audited.
+                            </p>
+                        </form>
+                        
+                        <div id="form-success-state" class="hidden text-center py-12">
+                            <svg class="h-8 w-8 text-apple-blue mx-auto mb-4" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>
+                            <h3 class="text-lg font-bold text-white tracking-tight">Request Logged</h3>
+                            <p class="mt-2 text-xs text-apple-muted max-w-xs mx-auto">An engineering strategist will make contact within one complete business cycle.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-black border-t border-neutral-900 text-[11px] text-apple-muted">
+        <div class="mx-auto max-w-5xl px-6 py-12">
+            <div class="md:grid md:grid-cols-3 md:gap-8 gap-y-12">
+                <div class="space-y-4">
+                    <span class="text-xs font-bold text-white tracking-tight">Surve Technologies Inc.</span>
+                    <p class="leading-relaxed">Architects of sovereign cognitive ecosystems and discrete automation fabrics for international enterprise.</p>
+                </div>
+                <div class="grid grid-cols-2 gap-8 md:col-span-2 mt-8 md:mt-0">
+                    <div>
+                        <h3 class="font-semibold text-white tracking-wider uppercase text-[10px]">Ecosystem Index</h3>
+                        <ul class="mt-4 space-y-2.5">
+                            <li><a href="#home" class="hover:text-white transition-colors">Home Array</a></li>
+                            <li><a href="#services" class="hover:text-white transition-colors">Capabilities Matrix</a></li>
+                            <li><a href="#reviews" class="hover:text-white transition-colors">Client Metrics</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-white tracking-wider uppercase text-[10px]">Technical Ingestion</h3>
+                        <p class="mt-2 text-neutral-500 leading-normal">Subscribe to localized regulatory architecture adjustments.</p>
+                        <form id="newsletter-form" class="mt-3 flex max-w-sm" novalidate>
+                            <input type="email" id="newsletter-email" required placeholder="node@enterprise.com" class="w-full min-w-0 rounded-l-md bg-neutral-900 border border-neutral-800 px-3 py-1.5 text-white text-xs focus:ring-1 focus:ring-apple-blue outline-none">
+                            <button type="submit" class="bg-neutral-800 text-white px-3 py-1.5 rounded-r-md hover:bg-neutral-700 transition-colors">Join</button>
+                        </form>
+                        <p id="newsletter-msg" class="mt-1 text-[10px] hidden"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-12 border-t border-neutral-900 pt-6 text-neutral-600 flex flex-col sm:flex-row justify-between items-center gap-4">
+                <p>&copy; 2026 Surve Technologies Inc. All structural rights reserved. Engineered in Brampton, Ontario.</p>
+                <span class="tracking-widest uppercase text-[9px] bg-neutral-950 px-2.5 py-1 rounded border border-neutral-900">Sovereign Tenant Node</span>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            
+            async function initializeSiteStructure() {
+                try {
+                    const response = await fetch('data.json');
+                    if (!response.ok) throw new Error('Failed to retrieve data.json schema.');
+                    
+                    const data = await response.json();
+                    applyPremiumRender(data);
+                    
+                    initializeAppleAnimations();
+                } catch (error) {
+                    console.error('Core init failure:', error);
+                    document.getElementById('products-grid').innerHTML = `
+                        <div class="col-span-full text-center py-16 border border-neutral-800 rounded-xl bg-neutral-950/50">
+                            <p class="text-sm font-medium text-white tracking-tight">Configuration Synchronizer Error</p>
+                            <p class="text-xs text-neutral-600 mt-2">Check that data.json is placed inside your local site folder.</p>
+                        </div>
+                    `;
+                }
+            }
+
+            function cleanXSS(str) {
+                const holder = document.createElement('div');
+                holder.textContent = str;
+                return holder.innerHTML;
+            }
+
+            function applyPremiumRender(data) {
+                // Populate Hero Copy
+                document.getElementById('hero-headline').textContent = data.hero.headline;
+                document.getElementById('hero-subheadline').textContent = data.hero.subheadline;
+                document.getElementById('hero-cta-primary').textContent = data.hero.cta_primary_text;
+                document.getElementById('hero-cta-secondary').textContent = data.hero.cta_secondary_text;
+
+                // Products Bento Blocks
+                const productsGrid = document.getElementById('products-grid');
+                productsGrid.innerHTML = data.products.map(prod => `
+                    <div class="apple-fade flex flex-col justify-between rounded-2xl bg-[#141416] p-8 border border-neutral-900 transition-all hover:bg-[#1c1c1e] duration-500">
+                        <div>
+                            <span class="text-[10px] font-semibold tracking-widest ${cleanXSS(prod.badgeColor)} uppercase">${cleanXSS(prod.badge)}</span>
+                            <h3 class="mt-4 text-2xl font-bold text-white tracking-tight leading-none">${cleanXSS(prod.title)}</h3>
+                            <p class="mt-4 text-xs leading-relaxed text-apple-muted">${cleanXSS(prod.description)}</p>
+                        </div>
+                        <div class="mt-10 pt-4 border-t border-neutral-900 flex items-center justify-between">
+                            ${prod.link ? `
+                                <a href="${cleanXSS(prod.link)}" target="_blank" rel="noopener" class="text-xs font-semibold text-apple-blue hover:underline inline-flex items-center group/link">
+                                    ${cleanXSS(prod.link_text)} <svg class="w-3 h-3 ml-0.5 transform group-hover/link:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+                                </a>
+                            ` : `
+                                <span class="text-xs font-medium text-neutral-600">${cleanXSS(prod.link_text)}</span>
+                            `}
+                        </div>
+                    </div>
+                `).join('');
+
+                // Stats Dashboard Row
+                const statsGrid = document.getElementById('stats-grid');
+                statsGrid.innerHTML = data.stats.map(stat => `
+                    <div class="flex flex-col items-center">
+                        <dd class="text-5xl font-bold tracking-tighter text-white sm:text-6xl">${cleanXSS(stat.value)}</dd>
+                        <dt class="mt-2 text-xs text-apple-muted tracking-tight max-w-[120px] mx-auto">${cleanXSS(stat.label)}</dt>
+                    </div>
+                `).join('');
+
+                // Capabilities Matrix (FIXED: Upgraded to Hardware Matte Bento Cards)
+                const servicesGrid = document.getElementById('services-grid');
+                servicesGrid.innerHTML = data.services.map(srv => `
+                    <div class="apple-fade flex flex-col justify-between rounded-2xl bg-[#141416] p-8 border border-neutral-900 hover:bg-[#1c1c1e] transition-all duration-500">
+                        <div>
+                            <div class="text-white mb-6 opacity-90">${srv.icon}</div>
+                            <h3 class="text-xl font-bold text-white tracking-tight leading-none">${cleanXSS(srv.title)}</h3>
+                            <p class="mt-4 text-xs leading-relaxed text-apple-muted">${cleanXSS(srv.description)}</p>
+                        </div>
+                        <div class="mt-8 pt-4 border-t border-neutral-900">
+                            <span class="text-[10px] font-semibold tracking-wide text-apple-blue uppercase">
+                                ${cleanXSS(srv.benefit)}
+                            </span>
+                        </div>
+                    </div>
+                `).join('');
+
+                // Premium Matte Reviews Layout
+                const reviewsGrid = document.getElementById('reviews-grid');
+                reviewsGrid.innerHTML = data.reviews.map(rev => `
+                    <div class="apple-fade bg-[#141416] p-8 rounded-2xl border border-neutral-900 flex flex-col justify-between">
+                        <p class="text-sm font-normal leading-relaxed text-neutral-300 tracking-tight">"${cleanXSS(rev.quote)}"</p>
+                        <div class="mt-8 pt-4 border-t border-neutral-900 flex justify-between items-center">
+                            <div>
+                                <span class="block text-xs font-semibold text-white tracking-tight">${cleanXSS(rev.author)}</span>
+                                <span class="block text-[11px] text-apple-muted mt-0.5">${cleanXSS(rev.role)}</span>
+                            </div>
+                            <span class="text-[10px] text-amber-500 tracking-wider">★★★★★</span>
+                        </div>
+                    </div>
+                `).join('');
+            }
+
+            function initializeAppleAnimations() {
+                const animatedNodes = document.querySelectorAll('.apple-fade');
+                const scrollConfig = { threshold: 0.05, rootMargin: '0px 0px -40px 0px' };
+
+                const observerInstance = new IntersectionObserver((entries, self) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('is-visible');
+                            self.unobserve(entry.target);
+                        }
+                    });
+                }, scrollConfig);
+
+                animatedNodes.forEach(node => observerInstance.observe(node));
+            }
+
+            initializeSiteStructure();
+
+            // --- Form Handling ---
+            const discoveryForm = document.getElementById('discovery-form');
+            const formSuccessState = document.getElementById('form-success-state');
+
+            if (discoveryForm) {
+                discoveryForm.addEventListener('submit', (e) => {
+                    e.preventDefault();
+                    let fault = false;
+
+                    const name = document.getElementById('form-name');
+                    const errName = document.getElementById('error-name');
+                    if (!name.value.trim()) {
+                        errName.textContent = 'Identity criteria missing.';
+                        errName.classList.remove('hidden');
+                        fault = true;
+                    } else { errName.classList.add('hidden'); }
+
+                    const email = document.getElementById('form-email');
+                    const errEmail = document.getElementById('error-email');
+                    if (!email.value.trim() || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value.trim())) {
+                        errEmail.textContent = 'Valid corporate email required.';
+                        errEmail.classList.remove('hidden');
+                        fault = true;
+                    } else { errEmail.classList.add('hidden'); }
+
+                    const msg = document.getElementById('form-message');
+                    const errMsg = document.getElementById('error-message');
+                    if (!msg.value.trim() || msg.value.trim().length < 15) {
+                        errMsg.textContent = 'Please elaborate on your goals (min 15 characters).';
+                        errMsg.classList.remove('hidden');
+                        fault = true;
+                    } else { errMsg.classList.add('hidden'); }
+
+                    if (!fault) {
+                        discoveryForm.classList.add('hidden');
+                        formSuccessState.classList.remove('hidden');
+                    }
+                });
+            }
+
+            // --- Newsletter ---
+            const newsForm = document.getElementById('newsletter-form');
+            const newsMsg = document.getElementById('newsletter-msg');
+            if (newsForm && newsMsg) {
+                newsForm.addEventListener('submit', (e) => {
+                    e.preventDefault();
+                    const input = document.getElementById('newsletter-email');
+                    if (input.value.includes('@')) {
+                        newsMsg.textContent = 'Endpoint connected.';
+                        newsMsg.className = 'mt-1 text-[10px] text-apple-blue';
+                        input.value = '';
+                    } else {
+                        newsMsg.textContent = 'Invalid address sequence.';
+                        newsMsg.className = 'mt-1 text-[10px] text-rose-500';
+                    }
+                });
+            }
+        });
+    </script>
 </body>
 </html>

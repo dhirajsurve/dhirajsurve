@@ -1,0 +1,95 @@
+{
+  "hero": {
+    "headline": "Architecting Autonomous AI Agent Ecosystems",
+    "subheadline": "Empower your enterprise operations. We design, deploy, and govern intelligent agent networks that transform complex workflows into streamlined, frictionless engines of growth.",
+    "cta_primary_text": "Begin Your Transformation",
+    "cta_secondary_text": "Explore Ecosystems"
+  },
+  "products": [
+    {
+      "badge": "Flagship Product",
+      "badgeColor": "text-blue-400",
+      "title": "RentAIAgent.ai",
+      "description": "Access over 500+ specialized, on-demand AI agents engineered explicitly for optimized real estate management and continuous customer interactions.",
+      "link": "https://rentaiagent.ai",
+      "link_text": "Launch Interface"
+    },
+    {
+      "badge": "Advanced Core",
+      "badgeColor": "text-indigo-400",
+      "title": "Email Harmonization Engine",
+      "description": "Leverage a sophisticated LangGraph-driven framework to dissect, route, and automatically execute multi-step resolution workflows for enterprise communications.",
+      "link": "",
+      "link_text": "Enterprise Ready"
+    },
+    {
+      "badge": "Architecture",
+      "badgeColor": "text-emerald-400",
+      "title": "Custom Agent Orchestration",
+      "description": "Bespoke AI architectures safely integrated and deployed directly within your AWS or GCP tenants with zero risk to data sovereignty.",
+      "link": "",
+      "link_text": "Compliant Infrastructure"
+    }
+  ],
+  "stats": [
+    { "value": "10x", "label": "Operational Speed Increase" },
+    { "value": "500+", "label": "Pre-Configured Agents" },
+    { "value": "100%", "label": "Canadian Data Sovereignty" },
+    { "value": "99.9%", "label": "Infrastructure Availability" }
+  ],
+  "services": [
+    {
+      "icon": "<svg class='h-6 w-6' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor'><path stroke-linecap='round' stroke-linejoin='round' d='M8.625 12a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z' /></svg>",
+      "iconBg": "bg-blue-600/10",
+      "iconColor": "text-blue-400",
+      "title": "Customer Service AI",
+      "description": "Deploy intelligent frontline support systems capable of deep context comprehension, sentiment tracking, and complex problem resolution without escalating to human teams.",
+      "benefit": "Key Benefit: Reduces Tier-1 support overhead by up to 70%",
+      "benefitStyle": "text-blue-400 bg-blue-950/40 border-blue-900/30"
+    },
+    {
+      "icon": "<svg class='h-6 w-6' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor'><path stroke-linecap='round' stroke-linejoin='round' d='M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9s2.015-9 4.5-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m0 18c1.657 0 3-4.03 3-9s-1.343-9-3-9m-7.487 5.922l.773.13a1.443 1.443 0 001.587-1.077l.46-1.523m12.134 0l-.46 1.523a1.443 1.443 0 001.586 1.077l.773-.13m-2.11 11.239l-.143-.717a1.442 1.442 0 00-1.72-1.121l-1.353.301m-5.362 0l-1.353-.301a1.442 1.442 0 00-1.72 1.121l-.143.717' /></svg>",
+      "iconBg": "bg-indigo-600/10",
+      "iconColor": "text-indigo-400",
+      "title": "Architecture Consulting",
+      "description": "Work directly with principal cloud architects to map system boundaries, governance matrices, fail-safe parameters, and compliance guardrails before writing code.",
+      "benefit": "Key Benefit: Bulletproof technical blueprinting & governance",
+      "benefitStyle": "text-indigo-400 bg-indigo-950/40 border-indigo-900/30"
+    },
+    {
+      "icon": "<svg class='h-6 w-6' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor'><path stroke-linecap='round' stroke-linejoin='round' d='M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z' /></svg>",
+      "iconBg": "bg-emerald-600/10",
+      "iconColor": "text-emerald-400",
+      "title": "Workflow Automation",
+      "description": "Chain legacy software with cutting-edge Large Language Models. We bridge the structural gap between disparate databases, ERPs, and document stores natively.",
+      "benefit": "Key Benefit: Unlocks straight-through document processing",
+      "benefitStyle": "text-emerald-400 bg-emerald-950/40 border-emerald-900/30"
+    }
+  ],
+  "reviews": [
+    {
+      "stars": "★★★★★",
+      "quote": "The RentAIAgent platform revolutionized our asset deployment cycles. We were able to spin up autonomous leasing agents within days, drastically improving response times.",
+      "author": "[Placeholder: Client Name 1]",
+      "role": "[Placeholder: VP of Operations, PropTech Solutions]"
+    },
+    {
+      "stars": "★★★★★",
+      "quote": "Implementing the LangGraph Email Harmonization Engine solved a decade-long inbox categorization bottleneck. Truly incredible architectural delivery by the Surve engineering squad.",
+      "author": "[Placeholder: Client Name 2]",
+      "role": "[Placeholder: Chief Information Officer, Logistics Enterprise]"
+    },
+    {
+      "stars": "★★★★★",
+      "quote": "With custom deployments housed strictly in our Canadian AWS instance, we didn't sacrifice any compliance mandates while gaining massive automation yields.",
+      "author": "[Placeholder: Client Name 3]",
+      "role": "[Placeholder: Director of Security, Financial Infrastructures]"
+    },
+    {
+      "stars": "★★★★★",
+      "quote": "The architectural exploration phase alone saved us months of research. They possess absolute clarity on where agent technology handles real scale and where it falls short.",
+      "author": "[Placeholder: Client Name 4]",
+      "role": "[Placeholder: Principal Architect, Global Supply Chains]"
+    }
+  ]
+}

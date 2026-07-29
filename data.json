@@ -37,6 +37,34 @@
     { "value": "100%", "label": "Canadian Data Sovereignty" },
     { "value": "99.9%", "label": "Infrastructure Availability" }
   ],
+  "useCases": [
+    {
+      "badge": "Use Case",
+      "title": "Call Center Support App",
+      "description": "An AI-powered voice agent that listens, understands, and resolves customer calls end-to-end — not just chatbots that hand off tickets.",
+      "capabilities": [
+        "Speech-to-text captures live caller audio in real time",
+        "Text-to-speech responds naturally over the phone",
+        "Unlocks locked customer accounts after secure verification",
+        "Updates account details such as contact info, preferences, and plan changes",
+        "Answers FAQs and policy questions from your knowledge base",
+        "Escalates only complex cases to human agents with full call context"
+      ]
+    },
+    {
+      "badge": "Use Case",
+      "title": "AI Agent Tier-1 Support",
+      "description": "Deploy AI agents that independently resolve Tier-1 customer support cases — password resets, order status, billing questions, and routine requests — so your human team focuses on complex escalations.",
+      "capabilities": [
+        "AI agents handle and close Tier-1 tickets without human intervention",
+        "Resolves password resets, account unlocks, and access issues",
+        "Answers order status, billing, and policy questions from your knowledge base",
+        "Routes Tier-2 and Tier-3 cases to the right human queue with full context",
+        "Works across chat, email, and ticketing systems",
+        "Cuts Tier-1 support volume and response times at scale"
+      ]
+    }
+  ],
   "services": [
     {
       "icon": "<svg class='h-6 w-6' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor'><path stroke-linecap='round' stroke-linejoin='round' d='M8.625 12a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z' /></svg>",
@@ -64,32 +92,33 @@
       "description": "Chain legacy software with cutting-edge Large Language Models. We bridge the structural gap between disparate databases, ERPs, and document stores natively.",
       "benefit": "Key Benefit: Unlocks straight-through document processing",
       "benefitStyle": "text-emerald-400 bg-emerald-950/40 border-emerald-900/30"
+    },
+    {
+      "icon": "<svg class='h-6 w-6' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor'><path stroke-linecap='round' stroke-linejoin='round' d='M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z' /></svg>",
+      "iconBg": "bg-amber-600/10",
+      "iconColor": "text-amber-400",
+      "title": "AI Agent Developer Outsourcing",
+      "description": "Extend your team with dedicated AI agent developers who design, build, and maintain production-ready agents — from LangGraph workflows to custom tool integrations — without the overhead of full-time hiring.",
+      "benefit": "Key Benefit: Scale agent delivery with flexible engineering capacity",
+      "benefitStyle": "text-amber-400 bg-amber-950/40 border-amber-900/30"
     }
   ],
   "reviews": [
     {
       "stars": "★★★★★",
-      "quote": "The RentAIAgent platform revolutionized our asset deployment cycles. We were able to spin up autonomous leasing agents within days, drastically improving response times.",
-      "author": "[Placeholder: Client Name 1]",
-      "role": "[Placeholder: VP of Operations, PropTech Solutions]"
+      "quote": "The RentAIAgent platform revolutionized our asset deployment cycles. We were able to spin up autonomous leasing agents within days, drastically improving response times."
     },
     {
       "stars": "★★★★★",
-      "quote": "Implementing the LangGraph Email Harmonization Engine solved a decade-long inbox categorization bottleneck. Truly incredible architectural delivery by the Surve engineering squad.",
-      "author": "[Placeholder: Client Name 2]",
-      "role": "[Placeholder: Chief Information Officer, Logistics Enterprise]"
+      "quote": "Implementing the LangGraph Email Harmonization Engine solved a decade-long inbox categorization bottleneck. Truly incredible architectural delivery by the Surve engineering squad."
     },
     {
       "stars": "★★★★★",
-      "quote": "With custom deployments housed strictly in our Canadian AWS instance, we didn't sacrifice any compliance mandates while gaining massive automation yields.",
-      "author": "[Placeholder: Client Name 3]",
-      "role": "[Placeholder: Director of Security, Financial Infrastructures]"
+      "quote": "With custom deployments housed strictly in our Canadian AWS instance, we didn't sacrifice any compliance mandates while gaining massive automation yields."
     },
     {
       "stars": "★★★★★",
-      "quote": "The architectural exploration phase alone saved us months of research. They possess absolute clarity on where agent technology handles real scale and where it falls short.",
-      "author": "[Placeholder: Client Name 4]",
-      "role": "[Placeholder: Principal Architect, Global Supply Chains]"
+      "quote": "The architectural exploration phase alone saved us months of research. They possess absolute clarity on where agent technology handles real scale and where it falls short."
     }
   ]
 }
